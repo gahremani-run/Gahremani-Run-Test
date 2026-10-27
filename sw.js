@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gahremani-run-shell-v2.0.4-ghtest';
+const CACHE_NAME = 'gahremani-run-shell-v2.0.4-test';
 const ASSET_CACHE = 'gahremani-run-assets-v1';   // models, mesh data and three.js: kept across app updates
 const APP_SHELL = ['./', './index.html', './manifest.webmanifest', './assets/icon-192.png', './assets/icon-512.png', './assets/kenney.json?v=1'];
 self.addEventListener('install', event => {
