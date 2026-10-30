@@ -245,6 +245,12 @@ html,body{overscroll-behavior:none}body.playing{touch-action:none}
 #cheatPanel button{width:100%;padding:8px;border-radius:10px;border:1px solid #8b5cf6aa;background:#0a0626;color:#cbb6ff;font-size:12.5px;font-weight:700}
 #cheatPanel .warn{font-size:10.5px;opacity:.7;text-align:center;margin-top:4px;line-height:1.6}
 .testBadge{position:fixed;top:calc(6px + env(safe-area-inset-top));left:50%;transform:translateX(-50%);z-index:4000;font:11px system-ui;color:#1a1204;background:#ffce45;padding:3px 12px;border-radius:999px;font-weight:900;box-shadow:0 0 10px #ffce4588;pointer-events:none}
+.jpChip{border-color:#ffd24a!important;color:#ffe9ac}
+.drChip{border-color:#27e8ff!important;color:#bdf3ff}
+.mbox .rules label{display:block;margin:10px 0 4px;font-size:13px;text-align:right}
+.mbox .rules input{width:100%;box-sizing:border-box;padding:9px;border-radius:10px;border:1.5px solid var(--cyan);background:#0a0626;color:#fff;font-size:14px;text-align:center}
+#casino .chips,#casinoExchange .chips{margin-bottom:6px}
+
 </style>
 </head>
 <body>
@@ -317,7 +323,7 @@ html,body{overscroll-behavior:none}body.playing{touch-action:none}
   </div>
 </div>
 <div id="gr-countdown" aria-live="assertive"><img id="gr-countdown-number" alt="شمارش معکوس"></div>
-<div id="gr-changelog" role="dialog" aria-modal="true"><div class="box"><h2>✨ تغییرات Gahremani Run — نسخه 2.0.4 (تست)</h2><ul><li>🎰 بخش کازینو اضافه شد: بلک‌جک، پوکر هدزآپ، Ride the Bus و اسلات، با توکن جدا از سکه و الماس</li><li>🧪 منوی چیت برای تست سریع امکانات</li><li>🔒 در این نسخه تست، ذخیره روی دیتابیس و لیدربورد آنلاین غیرفعال است</li><li>💾 ذخیره‌ی محلی این نسخه کاملاً جدا از بازی اصلی است</li><li>🎥 دوربین حین پرش بیشتر بالا می‌آید تا دید جلو باز بماند</li><li>📜 منوی تغییرات نسخه حالا روی گوشی اسکرول می‌خورد</li><li>💎 جوایز لیدربورد هفتگی تغییر کرد: رتبه ۱: ۱۲۰ 💎، رتبه ۲: ۹۰ 💎، رتبه ۳: ۶۰ 💎</li><li>🦘 پرش کوتاه‌تر و دقیق‌تر با همان ارتفاع قبلی</li><li>🎥 دوربین حین پرش بالا می‌آید</li><li>🪙 سکه‌های گنبدی کوتاه‌تر و نیمه‌شفاف شدند</li><li>🎭 انیمیشن‌های کوتاه منو (سرتکان‌دادن، لرزیدن، شنا، مدیتیشن) با سرعت عادی چند بار تکرار می‌شوند تا ۵ ثانیه</li><li>🛠️ رفع باگ خرید شخصیت‌های جدید (ایرج و معبودی)</li><li>👆 سوایپ دقیق‌تر: هر کشیدن انگشت فقط یک لاین عوض می‌کند و پرش بعد از تغییر لاین و رول فوری کار می‌کند</li><li>🧬 ۲۱ کاراکتر و اسکین ۳بعدی با ۶ درجه کمیابی؛ باز کردن با سکه، الماس یا ماموریت</li><li>🏠 منوی اصلی جدید با نمایش کاراکتر انتخاب‌شده و انیمیشن‌های تصادفی</li><li>🏆 لیدربورد هفتگی و فصلی با جایزه‌ی الماس، قوانین، تایمر و پروفایل بازیکنان</li><li>👤 صفحه‌ی حساب کاربری با سابقه‌ی فصل‌ها و هفته‌ها</li><li>💎 واحد جدید الماس + ذخیره‌ی ابری اسکین‌ها، الماس و ماموریت‌ها</li><li>🎬 انیمیشن‌های اختصاصی برای هر گروه کاراکتر (پرش، دویدن، مرگ تصادفی، اسلاید و رول)</li><li>⚡ بارگذاری سریع‌تر: مدل‌ها در پوشه‌ی assets کش می‌شوند و بازی آفلاین هم اجرا می‌شود</li><li>👆 کنترل لمسی بهتر و امکان پرش از حالت رول و اسلاید</li></ul><button id="closeChangelog">متوجه شدم</button></div></div>
+<div id="gr-changelog" role="dialog" aria-modal="true"><div class="box"><h2>✨ تغییرات Gahremani Run — نسخه 2.0.6 (تست)</h2><ul><li>🐛 رفع باگ محاسبه ضریب در Ride the Bus (ضریب حالا قبل از کشیدن کارت محاسبه می‌شود)</li><li>⚖️ تنظیم مجدد شانس و جایزه جک‌پات برای پایداری بلندمدت ذخیره</li><li>💱 صرافی توکن↔الماس (خرید ۱ 💎=۱۰۰ 🎲، بازخرید ۱۵۰ 🎲=۱ 💎)</li><li>🏆 جک‌پات مشترک بین هر ۴ بازی، با ذخیره و احتمال قابل تنظیم</li><li>🎚️ محدوده شرط هر بازی مشخص شد (پوکر/بلک‌جک/باس ۵ تا ۵۰، اسلات ۱ تا ۲۰)</li><li>📐 بازده (RTP) هر بازی با محاسبه و شبیه‌سازی تنظیم شد</li><li>🎰 بخش کازینو اضافه شد: بلک‌جک، پوکر هدزآپ، Ride the Bus و اسلات، با توکن جدا از سکه و الماس</li><li>🧪 منوی چیت برای تست سریع امکانات</li><li>🔒 در این نسخه تست، ذخیره روی دیتابیس و لیدربورد آنلاین غیرفعال است</li><li>💾 ذخیره‌ی محلی این نسخه کاملاً جدا از بازی اصلی است</li><li>🎥 دوربین حین پرش بیشتر بالا می‌آید تا دید جلو باز بماند</li><li>📜 منوی تغییرات نسخه حالا روی گوشی اسکرول می‌خورد</li><li>💎 جوایز لیدربورد هفتگی تغییر کرد: رتبه ۱: ۱۲۰ 💎، رتبه ۲: ۹۰ 💎، رتبه ۳: ۶۰ 💎</li><li>🦘 پرش کوتاه‌تر و دقیق‌تر با همان ارتفاع قبلی</li><li>🎥 دوربین حین پرش بالا می‌آید</li><li>🪙 سکه‌های گنبدی کوتاه‌تر و نیمه‌شفاف شدند</li><li>🎭 انیمیشن‌های کوتاه منو (سرتکان‌دادن، لرزیدن، شنا، مدیتیشن) با سرعت عادی چند بار تکرار می‌شوند تا ۵ ثانیه</li><li>🛠️ رفع باگ خرید شخصیت‌های جدید (ایرج و معبودی)</li><li>👆 سوایپ دقیق‌تر: هر کشیدن انگشت فقط یک لاین عوض می‌کند و پرش بعد از تغییر لاین و رول فوری کار می‌کند</li><li>🧬 ۲۱ کاراکتر و اسکین ۳بعدی با ۶ درجه کمیابی؛ باز کردن با سکه، الماس یا ماموریت</li><li>🏠 منوی اصلی جدید با نمایش کاراکتر انتخاب‌شده و انیمیشن‌های تصادفی</li><li>🏆 لیدربورد هفتگی و فصلی با جایزه‌ی الماس، قوانین، تایمر و پروفایل بازیکنان</li><li>👤 صفحه‌ی حساب کاربری با سابقه‌ی فصل‌ها و هفته‌ها</li><li>💎 واحد جدید الماس + ذخیره‌ی ابری اسکین‌ها، الماس و ماموریت‌ها</li><li>🎬 انیمیشن‌های اختصاصی برای هر گروه کاراکتر (پرش، دویدن، مرگ تصادفی، اسلاید و رول)</li><li>⚡ بارگذاری سریع‌تر: مدل‌ها در پوشه‌ی assets کش می‌شوند و بازی آفلاین هم اجرا می‌شود</li><li>👆 کنترل لمسی بهتر و امکان پرش از حالت رول و اسلاید</li></ul><button id="closeChangelog">متوجه شدم</button></div></div>
 <div id="powerHud" class="hidden" style="position:fixed;top:76px;left:50%;transform:translateX(-50%);z-index:8;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;font-weight:900;text-shadow:0 2px 4px #000"></div>
 <div id="controls" class="hidden" aria-hidden="true"></div>
 <div id="flash"></div>
@@ -1846,7 +1852,7 @@ function animate(now){
 const menu=document.querySelector('#menu'),gameover=document.querySelector('#gameover'),hud=document.querySelector('#hud'),controls=document.querySelector('#controls'),scoreEl=document.querySelector('#score'),coinsEl=document.querySelector('#coins'),speedEl=document.querySelector('#speed'),finalScore=document.querySelector('#finalScore'),flash=document.querySelector('#flash'),start=document.querySelector('#start'),restart=document.querySelector('#restart');
 renderHighScores();renderShop();
 document.querySelector('#changeUsername')?.addEventListener('click',()=>changePlayerName());
-const GR_CHANGELOG_VERSION='2.0.4';const grChangelog=document.querySelector('#gr-changelog');
+const GR_CHANGELOG_VERSION='2.0.6';const grChangelog=document.querySelector('#gr-changelog');
 function showChangelog(){if(grChangelog)grChangelog.style.display='flex';}
 function closeChangelog(){if(grChangelog)grChangelog.style.display='none';try{localStorage.setItem('gahremaniRunSeenChangelog_TEST',GR_CHANGELOG_VERSION)}catch(e){}}
 document.querySelector('#showChangelog')?.addEventListener('click',showChangelog);document.querySelector('#closeChangelog')?.addEventListener('click',closeChangelog);
@@ -1915,18 +1921,106 @@ let tokens=Math.max(0,Number(localStorage.getItem(TOKEN_KEY))||2000);
 function saveTokens(){try{localStorage.setItem(TOKEN_KEY,String(Math.floor(tokens)))}catch(e){}}
 function addTokens(n){tokens=Math.max(0,Math.floor(tokens+n));saveTokens();renderTokenChips();}
 function renderTokenChips(){document.querySelectorAll('.tokChip b').forEach(e=>e.textContent=fa(tokens));}
-function betButtons(cur,onPick){ // cur: currently-picked bet (for highlighting); onPick(amount)
-  return [10,50,100,250].map(v=>`<button class="chipBtn${v===cur?' on':''}" data-bet="${v}"${tokens<v?' disabled':''}>${fa(v)}</button>`).join('');
+function betButtons(game,cur){
+  const [min,max]=BET_LIMITS[game];
+  return betPresets(game).map(v=>`<button class="chipBtn${v===cur?' on':''}" data-bet="${v}"${tokens<v?' disabled':''}>${fa(v)}</button>`).join('')+`<div class="note" style="margin-top:4px">شرط بین ${fa(min)} تا ${fa(max)} توکن</div>`;
 }
 // ===== Casino hub =====
-function openCasino(){$id('casino').classList.remove('hidden');renderTokenChips();}
+
+// ===== Shared economy: tokens <-> diamonds exchange + a shared jackpot (test build, client-side only) =====
+const CASINO_CFG_KEY='gahremaniCasinoCfg_v1_TEST';
+const CASINO_DEFAULT_CFG={buyRate:100,sellRate:150,jackpotRakePct:0.02,jackpotPrize:2000,jackpotOdds:3400,pokerRakePct:0.05,pokerRakeCap:10,busEdge:0.982};
+let casinoCfg={...CASINO_DEFAULT_CFG};
+try{casinoCfg={...CASINO_DEFAULT_CFG,...JSON.parse(localStorage.getItem(CASINO_CFG_KEY)||'{}')};}catch(e){}
+function saveCasinoCfg(){try{localStorage.setItem(CASINO_CFG_KEY,JSON.stringify(casinoCfg))}catch(e){}}
+const JACKPOT_KEY='gahremaniJackpotReserve_v1_TEST', DIAMOND_RESERVE_KEY='gahremaniDiamondReserve_v1_TEST';
+let jackpotReserve=Number(localStorage.getItem(JACKPOT_KEY)); if(!Number.isFinite(jackpotReserve))jackpotReserve=10000;
+let diamondReserve=Number(localStorage.getItem(DIAMOND_RESERVE_KEY)); if(!Number.isFinite(diamondReserve))diamondReserve=500;
+function saveReserves(){try{localStorage.setItem(JACKPOT_KEY,String(jackpotReserve));localStorage.setItem(DIAMOND_RESERVE_KEY,String(diamondReserve))}catch(e){}}
+function renderReserveChips(){document.querySelectorAll('.jpChip b').forEach(e=>e.textContent=fa(Math.floor(jackpotReserve)));document.querySelectorAll('.drChip b').forEach(e=>e.textContent=fa(Math.floor(diamondReserve)));}
+const BET_LIMITS={poker:[5,50],blackjack:[5,50],bus:[5,50],slots:[1,20]};
+function betPresets(game){const [mn,mx]=BET_LIMITS[game];return [...new Set([mn,Math.round(mx*.2/mn)*mn||mn,Math.round(mx*.5/mn)*mn||mn,mx])].filter(v=>v>=mn&&v<=mx).sort((a,b)=>a-b);}
+// Places a bet for `game`: validates range/balance, deducts tokens, feeds the shared jackpot reserve (2% of the bet),
+// and rolls the jackpot (fixed odds, only possible while the reserve can actually cover the prize).
+function placeBet(game,amount){
+  const [min,max]=BET_LIMITS[game];
+  amount=Math.floor(amount);
+  if(!Number.isFinite(amount)||amount<min||amount>max)return {ok:false,reason:'range'};
+  if(tokens<amount)return {ok:false,reason:'balance'};
+  tokens-=amount; saveTokens();
+  jackpotReserve+=amount*casinoCfg.jackpotRakePct;
+  let jackpotWon=false, jackpotPrize=0;
+  if(jackpotReserve>=casinoCfg.jackpotPrize && cryptoInt(casinoCfg.jackpotOdds)===0){
+    jackpotPrize=casinoCfg.jackpotPrize; jackpotReserve-=jackpotPrize;
+    tokens+=jackpotPrize; saveTokens(); jackpotWon=true;
+  }
+  saveReserves(); renderTokenChips(); renderReserveChips();
+  if(jackpotWon){sfx('win');modal(`<h3>🎉 جک‌پات!</h3><div class="bjMsg">${fa(jackpotPrize)} 🪙 جک‌پات بردی!</div><button id="jpOk" class="nbtn primary">عالی!</button>`);$id('jpOk').onclick=closeModal;}
+  return {ok:true,jackpotWon,jackpotPrize};
+}
+function exchangeBuyTokens(diamondsSpend){
+  diamondsSpend=Math.floor(diamondsSpend);
+  if(diamondsSpend<=0)return {ok:false,reason:'amount'};
+  if((shopData.diamonds||0)<diamondsSpend)return {ok:false,reason:'balance'};
+  shopData.diamonds-=diamondsSpend; saveShop();
+  diamondReserve+=diamondsSpend; saveReserves();
+  addTokens(diamondsSpend*casinoCfg.buyRate); renderShop(); renderReserveChips();
+  return {ok:true};
+}
+function exchangeSellTokens(diamondsWant){
+  diamondsWant=Math.floor(diamondsWant);
+  const need=diamondsWant*casinoCfg.sellRate;
+  if(diamondsWant<=0)return {ok:false,reason:'amount'};
+  if(tokens<need)return {ok:false,reason:'balance'};
+  if(diamondReserve<diamondsWant)return {ok:false,reason:'reserve'}; // tokens are NOT touched on failure
+  tokens-=need; saveTokens();
+  diamondReserve-=diamondsWant; saveReserves();
+  shopData.diamonds=(shopData.diamonds||0)+diamondsWant; saveShop(); renderShop(); renderReserveChips();
+  return {ok:true};
+}
+function openExchange(){$id('casino').classList.add('hidden');$id('casinoExchange').classList.remove('hidden');renderExchange();}
+function renderExchange(){
+  $id('exRateInfo').textContent=`نرخ خرید: هر ۱ 💎 = ${fa(casinoCfg.buyRate)} 🎲   •   نرخ بازخرید: هر ${fa(casinoCfg.sellRate)} 🎲 = ۱ 💎`;
+  $id('exDiamondBal').textContent='الماس شما: '+fa(shopData.diamonds||0);
+  $id('exTokenBal').textContent='توکن شما: '+fa(tokens);
+  renderReserveChips();renderTokenChips();
+}
+function exBuy(n){const r=exchangeBuyTokens(n);if(r.ok){toast(`${fa(n*casinoCfg.buyRate)} 🎲 خریداری شد`);renderExchange();}else toast(r.reason==='balance'?'الماس کافی نداری':'مقدار نامعتبر');}
+function exSell(n){const r=exchangeSellTokens(n);if(r.ok){toast(`${fa(n)} 💎 دریافت شد`);renderExchange();}else toast(r.reason==='reserve'?'ذخیره صرافی فعلاً کافی نیست؛ بعداً دوباره امتحان کن':r.reason==='balance'?'توکن کافی نداری':'مقدار نامعتبر');}
+$id('closeExchange').onclick=()=>closeCasinoGame('casinoExchange');
+$id('exBuyBtns').innerHTML=[1,5,10,25].map(n=>`<button class="chipBtn" data-buy="${n}">${fa(n)} 💎 ⬅ ${fa(n*100)} 🎲</button>`).join('');
+$id('exBuyBtns').querySelectorAll('[data-buy]').forEach(b=>b.onclick=()=>exBuy(+b.dataset.buy));
+$id('exSellBtns').innerHTML=[1,5,10,25].map(n=>`<button class="chipBtn" data-sell="${n}">${fa(n)} 💎 ➡ ${fa(n*150)} 🎲</button>`).join('');
+$id('exSellBtns').querySelectorAll('[data-sell]').forEach(b=>b.onclick=()=>exSell(+b.dataset.sell));
+function openCasinoSettings(){
+  modal(`<h3>⚙️ تنظیمات کازینو (تست)</h3><div class="rules" style="text-align:right">
+   <label>جایزه جک‌پات (توکن): <input id="cfgPrize" type="number" value="${casinoCfg.jackpotPrize}"></label>
+   <label>احتمال جک‌پات (۱ در هر N شرط): <input id="cfgOdds" type="number" value="${casinoCfg.jackpotOdds}"></label>
+   <label>سهم جک‌پات از هر شرط (٪): <input id="cfgRake" type="number" step="0.1" value="${(casinoCfg.jackpotRakePct*100).toFixed(1)}"></label>
+   <label>نرخ خرید توکن (به ازای ۱ الماس): <input id="cfgBuy" type="number" value="${casinoCfg.buyRate}"></label>
+   <label>نرخ بازخرید (توکن به ازای ۱ الماس): <input id="cfgSell" type="number" value="${casinoCfg.sellRate}"></label>
+   <label>رِیک پوکر (٪): <input id="cfgPokerRake" type="number" step="0.1" value="${(casinoCfg.pokerRakePct*100).toFixed(1)}"></label>
+  </div><button id="cfgSave" class="nbtn primary">ذخیره</button><button id="cfgReset" class="nbtn">پیش‌فرض</button>`,'tall');
+  $id('cfgSave').onclick=()=>{
+    casinoCfg.jackpotPrize=Math.max(1,+$id('cfgPrize').value||casinoCfg.jackpotPrize);
+    casinoCfg.jackpotOdds=Math.max(1,+$id('cfgOdds').value||casinoCfg.jackpotOdds);
+    casinoCfg.jackpotRakePct=Math.max(0,(+$id('cfgRake').value||0)/100);
+    casinoCfg.buyRate=Math.max(1,+$id('cfgBuy').value||casinoCfg.buyRate);
+    casinoCfg.sellRate=Math.max(1,+$id('cfgSell').value||casinoCfg.sellRate);
+    casinoCfg.pokerRakePct=Math.max(0,(+$id('cfgPokerRake').value||0)/100);
+    saveCasinoCfg();closeModal();toast('تنظیمات ذخیره شد');renderExchange();
+  };
+  $id('cfgReset').onclick=()=>{casinoCfg={...CASINO_DEFAULT_CFG};saveCasinoCfg();closeModal();toast('به پیش‌فرض برگشت');};
+}
+function openCasino(){$id('casino').classList.remove('hidden');renderTokenChips();renderReserveChips();}
 function closeCasino(){$id('casino').classList.add('hidden');}
 $id('openCasino').onclick=openCasino;$id('closeCasino').onclick=closeCasino;
 $id('casinoTiles').onclick=e=>{
   const b=e.target.closest('[data-game]');if(!b)return;
   const g=b.dataset.game;
-  if(g==='blackjack')openBlackjack(); else if(g==='slots')openSlots(); else if(g==='bus')openBus(); else if(g==='poker')openPoker();
+  if(g==='blackjack')openBlackjack(); else if(g==='slots')openSlots(); else if(g==='bus')openBus(); else if(g==='poker')openPoker(); else if(g==='exchange')openExchange();
 };
+$id('casinoSettingsBtn').onclick=openCasinoSettings;
 function closeCasinoGame(id){$id(id).classList.add('hidden');$id('casino').classList.remove('hidden');renderTokenChips();}
 
 // ===================== BLACKJACK =====================
@@ -1935,8 +2029,8 @@ function bjTotal(cards){let sum=0,aces=0;for(const c of cards){if(c.r===14){sum+
 function openBlackjack(){$id('casino').classList.add('hidden');$id('bjGame').classList.remove('hidden');bj.state='bet';bj.bet=0;renderBJ();}
 function bjPlaceBet(amt){if(tokens<amt)return;bj.bet=amt;renderBJ();}
 function bjDeal(){
-  if(bj.bet<=0||tokens<bj.bet)return;
-  tokens-=bj.bet;saveTokens();
+  if(bj.bet<=0)return;
+  const r=placeBet('blackjack',bj.bet); if(!r.ok){toast(r.reason==='balance'?'توکن کافی نیست':'شرط باید بین ۵ تا ۵۰ باشد');return;}
   bj.deck=shuffleDeck(freshDeck());bj.player=[bj.deck.pop(),bj.deck.pop()];bj.dealer=[bj.deck.pop(),bj.deck.pop()];
   bj.dealerHidden=true;bj.state='play';sfx('deal');
   const pt=bjTotal(bj.player).sum, dt=bjTotal(bj.dealer).sum;
@@ -1944,11 +2038,11 @@ function bjDeal(){
   renderBJ();
 }
 function bjHit(){if(bj.state!=='play')return;bj.player.push(bj.deck.pop());sfx('deal');if(bjTotal(bj.player).sum>21){bjReveal();bjSettle();}else renderBJ();}
-function bjDouble(){if(bj.state!=='play'||bj.player.length!==2||tokens<bj.bet)return;tokens-=bj.bet;bj.bet*=2;saveTokens();bj.player.push(bj.deck.pop());sfx('deal');bjReveal();bjSettle();}
+// double-down is disabled in this build to keep the measured RTP in the 95-97% target band
 function bjStand(){if(bj.state!=='play')return;bjReveal();bjSettle();}
 function bjReveal(){
   bj.dealerHidden=false;bj.state='dealer';
-  while(bjTotal(bj.dealer).sum<17)bj.dealer.push(bj.deck.pop());
+  while(true){const t=bjTotal(bj.dealer); if(t.sum<17||(t.sum===17&&t.soft))bj.dealer.push(bj.deck.pop()); else break;}
 }
 function bjSettle(){
   const p=bjTotal(bj.player),d=bjTotal(bj.dealer);
@@ -1972,34 +2066,35 @@ function renderBJ(){
   $id('bjDealerTotal').textContent=bj.player.length?('دیلر: '+dTotalShown):'';
   $id('bjPlayerTotal').textContent=bj.player.length?('تو: '+bjTotal(bj.player).sum+(bjTotal(bj.player).soft?' (نرم)':'')):'';
   $id('bjBetRow').classList.toggle('hidden',bj.state!=='bet');
-  $id('bjBetRow').innerHTML=betButtons(bj.bet,bjPlaceBet)+`<button id="bjDealBtn" class="nbtn primary"${bj.bet<=0?' disabled':''}>شروع (${fa(bj.bet)} 🪙)</button>`;
+  $id('bjBetRow').innerHTML=betButtons('blackjack',bj.bet)+`<button id="bjDealBtn" class="nbtn primary"${bj.bet<=0?' disabled':''}>شروع (${fa(bj.bet)} 🪙)</button>`;
   $id('bjBetRow').querySelectorAll('[data-bet]').forEach(b=>b.onclick=()=>bjPlaceBet(+b.dataset.bet));
   const dealBtn=$id('bjDealBtn');if(dealBtn)dealBtn.onclick=bjDeal;
   $id('bjActions').classList.toggle('hidden',bj.state!=='play');
-  $id('bjDouble').disabled=!(bj.player.length===2&&tokens>=bj.bet);
+  $id('bjDouble')?.remove();
   $id('bjResult').classList.toggle('hidden',bj.state!=='over');
   if(bj.state==='over')$id('bjResult').innerHTML=`<div class="bjMsg">${bj.resultMsg}</div><button id="bjAgain" class="nbtn primary">دست بعدی</button>`;
   const again=$id('bjAgain');if(again)again.onclick=()=>{bj.state='bet';bj.bet=0;bj.player=[];bj.dealer=[];renderBJ();};
   renderTokenChips();
 }
-$id('bjHit').onclick=bjHit;$id('bjStand').onclick=bjStand;$id('bjDouble').onclick=bjDouble;$id('closeBJ').onclick=()=>closeCasinoGame('bjGame');
+$id('bjHit').onclick=bjHit;$id('bjStand').onclick=bjStand;$id('closeBJ').onclick=()=>closeCasinoGame('bjGame');
 
 // ===================== SLOTS =====================
 const SLOT_SYM=['🍒','🍋','🔔','⭐','💎','7️⃣'], SLOT_W=[34,24,16,10,6,3], SLOT_PAY={'🍒':4,'🍋':6,'🔔':11,'⭐':24,'💎':55,'7️⃣':150};
 const SLOT_TOTAL=SLOT_W.reduce((a,b)=>a+b,0);
 function slotPick(){let x=cryptoInt(SLOT_TOTAL);for(let i=0;i<SLOT_SYM.length;i++){if(x<SLOT_W[i])return SLOT_SYM[i];x-=SLOT_W[i];}return SLOT_SYM[0];}
 let slotBet=10,slotSpinning=false;
-function openSlots(){$id('casino').classList.add('hidden');$id('slotsGame').classList.remove('hidden');renderSlots();}
+function openSlots(){$id('casino').classList.add('hidden');$id('slotsGame').classList.remove('hidden');slotBet=Math.max(BET_LIMITS.slots[0],Math.min(slotBet,BET_LIMITS.slots[1]));renderSlots();}
 function renderSlots(){
-  $id('slotsBetRow').innerHTML=betButtons(slotBet,null);
+  $id('slotsBetRow').innerHTML=betButtons('slots',slotBet);
   $id('slotsBetRow').querySelectorAll('[data-bet]').forEach(b=>b.onclick=()=>{slotBet=+b.dataset.bet;renderSlots();});
   $id('slotsSpin').disabled=tokens<slotBet||slotSpinning;
   $id('slotsSpin').textContent=slotSpinning?'…':`بچرخون (${fa(slotBet)} 🪙)`;
   renderTokenChips();
 }
 function slotsSpin(){
-  if(tokens<slotBet||slotSpinning)return;
-  tokens-=slotBet;saveTokens();slotSpinning=true;renderSlots();sfx('spin');
+  if(slotSpinning)return;
+  const r=placeBet('slots',slotBet); if(!r.ok){toast(r.reason==='balance'?'توکن کافی نیست':'شرط باید بین ۱ تا ۲۰ باشد');return;}
+  slotSpinning=true;renderSlots();sfx('spin');
   const line=[slotPick(),slotPick(),slotPick()];
   const reels=$id('slotsReels').children;
   for(let i=0;i<3;i++)reels[i].textContent='🎰';
@@ -2021,13 +2116,12 @@ $id('slotsPaytableBtn').onclick=()=>{modal(`<h3>🎰 جدول برد اسلات<
 
 // ===================== RIDE THE BUS =====================
 const bus={deck:[],stage:0,bank:0,bet:0,cards:[],state:'bet'};
-const BUS_EDGE=0.97;
-function busMult(prob){return prob<=0?0:Math.max(1.01,Math.round((1/prob)*BUS_EDGE*100)/100);}
+function busMult(prob){return prob<=0?0:Math.max(1.01,Math.round((1/prob)*casinoCfg.busEdge*100)/100);}
 function openBus(){$id('casino').classList.add('hidden');$id('busGame').classList.remove('hidden');bus.state='bet';bus.bet=0;renderBus();}
 function busBet(amt){if(tokens<amt)return;bus.bet=amt;renderBus();}
 function busStart(){
-  if(bus.bet<=0||tokens<bus.bet)return;
-  tokens-=bus.bet;saveTokens();
+  if(bus.bet<=0)return;
+  const r=placeBet('bus',bus.bet); if(!r.ok){toast(r.reason==='balance'?'توکن کافی نیست':'شرط باید بین ۵ تا ۵۰ باشد');return;}
   bus.deck=shuffleDeck(freshDeck());bus.stage=1;bus.bank=bus.bet;bus.cards=[];bus.state='play';renderBus();
 }
 function busOddsStage1(){const red=bus.deck.filter(c=>c.s==='H'||c.s==='D').length;return {red:red/bus.deck.length,black:1-red/bus.deck.length};}
@@ -2036,13 +2130,14 @@ function busOddsStage3(){const [c1,c2]=bus.cards;const lo=Math.min(c1.r,c2.r),hi
 function busOddsStage4(){const n=bus.deck.length;return {S:bus.deck.filter(c=>c.s==='S').length/n,H:bus.deck.filter(c=>c.s==='H').length/n,D:bus.deck.filter(c=>c.s==='D').length/n,C:bus.deck.filter(c=>c.s==='C').length/n};}
 function busGuess(choice){
   if(bus.state!=='play')return;
-  const card=bus.deck.pop();
+  // Odds (and the paid multiplier) must be computed from the deck BEFORE the card is drawn — otherwise the
+  // just-drawn card's own removal would bias the probability of the very outcome it already determined.
   let correct=false,mult=1;
-  if(bus.stage===1){const o=busOddsStage1();mult=busMult(o[choice]);correct=(card.s==='H'||card.s==='D')?choice==='red':choice==='black';}
-  else if(bus.stage===2){const c1=bus.cards[0];const o=busOddsStage2();mult=busMult(o[choice]);correct=choice==='higher'?card.r>c1.r:card.r<c1.r;if(card.r===c1.r)correct=false;}
-  else if(bus.stage===3){const [c1,c2]=bus.cards;const lo=Math.min(c1.r,c2.r),hi=Math.max(c1.r,c2.r);const o=busOddsStage3();mult=busMult(o[choice]);const ins=card.r>lo&&card.r<hi,out=card.r<lo||card.r>hi;correct=choice==='inside'?ins:out;}
-  else if(bus.stage===4){const o=busOddsStage4();mult=busMult(o[choice]);correct=card.s===choice;}
-  bus.cards.push(card);sfx('deal');
+  if(bus.stage===1){const o=busOddsStage1();mult=busMult(o[choice]);const card=bus.deck.pop();correct=(card.s==='H'||card.s==='D')?choice==='red':choice==='black';bus.cards.push(card);}
+  else if(bus.stage===2){const c1=bus.cards[0];const o=busOddsStage2();mult=busMult(o[choice]);const card=bus.deck.pop();correct=choice==='higher'?card.r>c1.r:card.r<c1.r;if(card.r===c1.r)correct=false;bus.cards.push(card);}
+  else if(bus.stage===3){const [c1,c2]=bus.cards;const lo=Math.min(c1.r,c2.r),hi=Math.max(c1.r,c2.r);const o=busOddsStage3();mult=busMult(o[choice]);const card=bus.deck.pop();const ins=card.r>lo&&card.r<hi,out=card.r<lo||card.r>hi;correct=choice==='inside'?ins:out;bus.cards.push(card);}
+  else if(bus.stage===4){const o=busOddsStage4();mult=busMult(o[choice]);const card=bus.deck.pop();correct=card.s===choice;bus.cards.push(card);}
+  sfx('deal');
   if(!correct){bus.bank=0;bus.state='lost';renderBus();return;}
   bus.bank=Math.round(bus.bank*mult);sfx('win');
   if(bus.stage===4){bus.state='won';}else{bus.state='choose';}
@@ -2052,7 +2147,7 @@ function busCashout(){if(bus.state!=='choose'&&bus.state!=='won')return;tokens+=
 function busNextStage(){bus.stage++;bus.state='play';renderBus();}
 function renderBus(){
   $id('busBetRow').classList.toggle('hidden',bus.state!=='bet');
-  if(bus.state==='bet'){$id('busBetRow').innerHTML=betButtons(bus.bet,null)+`<button id="busStartBtn" class="nbtn primary"${bus.bet<=0?' disabled':''}>شروع (${fa(bus.bet)} 🪙)</button>`;
+  if(bus.state==='bet'){$id('busBetRow').innerHTML=betButtons('bus',bus.bet)+`<button id="busStartBtn" class="nbtn primary"${bus.bet<=0?' disabled':''}>شروع (${fa(bus.bet)} 🪙)</button>`;
     $id('busBetRow').querySelectorAll('[data-bet]').forEach(b=>b.onclick=()=>busBet(+b.dataset.bet));
     $id('busStartBtn').onclick=busStart;}
   $id('busCards').innerHTML=bus.cards.map(c=>cardEl(c)).join('')+(bus.state==='play'?cardEl(null,true):'');
@@ -2092,8 +2187,8 @@ function pkBotDecide(strength,facing,pot,toCall){const bluff=Math.random()<0.07;
 function openPoker(){$id('casino').classList.add('hidden');$id('pokerGame').classList.remove('hidden');pk.state='bet';pk.ante=0;renderPoker();}
 function pkSetAnte(a){if(tokens<a)return;pk.ante=a;renderPoker();}
 function pkStart(){
-  if(pk.ante<=0||tokens<pk.ante)return;
-  tokens-=pk.ante;saveTokens();
+  if(pk.ante<=0)return;
+  const r=placeBet('poker',pk.ante); if(!r.ok){toast(r.reason==='balance'?'توکن کافی نیست':'آنته باید بین ۵ تا ۵۰ باشد');return;}
   pk.deck=shuffleDeck(freshDeck());pk.hole=[pk.deck.pop(),pk.deck.pop()];pk.boHole=[pk.deck.pop(),pk.deck.pop()];
   pk.board=[];pk.pot=pk.ante*2;pk.myInPot=pk.ante;pk.street='preflop';pk.state='act_me';pk.facing=0;pk.toCall=0;pk.msg='';
   renderPoker();
@@ -2114,13 +2209,14 @@ function pkBotTurnAfterCheck(){
   } else { pkNextStreetCards(); return; }
   renderPoker();
 }
+function pkRake(pot){return Math.min(Math.floor(pot*casinoCfg.pokerRakePct),casinoCfg.pokerRakeCap);}
 function pkMyBet(){
   if(pk.state!=='act_me'||pk.facing)return;
   const amt=Math.min(pk.pot,tokens); if(amt<=0)return;
   tokens-=amt;saveTokens(); pk.myInPot+=amt; pk.pot+=amt; sfx('click');
   const sB=pkStrength(pk.boHole,pk.board);
   const act=pkBotDecide(sB,1,pk.pot,amt);
-  if(act==='fold'){pk.state='over';pk.msg='حریف فولد کرد — پات رو بردی!';tokens+=pk.pot;saveTokens();renderPoker();return;}
+  if(act==='fold'){pk.state='over';const r=pkRake(pk.pot);pk.msg=`حریف فولد کرد — پات رو بردی! (ریک: ${fa(r)} 🪙)`;tokens+=pk.pot-r;saveTokens();renderPoker();return;}
   pk.pot+=amt; pk.msg='حریف call کرد.'; pkNextStreetCards();
 }
 function pkMyCall(){
@@ -2135,15 +2231,15 @@ function pkMyFold(){
 }
 function pkShowdown(){
   const evMe=bestOf([...pk.hole,...pk.board]), evBo=bestOf([...pk.boHole,...pk.board]);
-  const c=cmpEv(evMe,evBo);
-  if(c>0){tokens+=pk.pot;saveTokens();pk.msg=`🎉 بردی با ${HAND_NAMES_FA[evMe[0]]}! (+${fa(pk.pot)} 🪙)`;sfx('win');}
+  const c=cmpEv(evMe,evBo), r=pkRake(pk.pot);
+  if(c>0){tokens+=pk.pot-r;saveTokens();pk.msg=`🎉 بردی با ${HAND_NAMES_FA[evMe[0]]}! (+${fa(pk.pot-r)} 🪙، ریک ${fa(r)})`;sfx('win');}
   else if(c<0){pk.msg=`باختی. دست حریف: ${HAND_NAMES_FA[evBo[0]]}`;sfx('lose');}
-  else{tokens+=pk.myInPot;saveTokens();pk.msg='تساوی — پات تقسیم شد.';}
+  else{const half=Math.floor(r/2);tokens+=pk.myInPot-half;saveTokens();pk.msg=`تساوی — پات تقسیم شد (ریک ${fa(half)}).`;}
   pk.state='over';pk.showBot=true;renderPoker();
 }
 function renderPoker(){
   $id('pokerAnteRow').classList.toggle('hidden',pk.state!=='bet');
-  if(pk.state==='bet'){$id('pokerAnteRow').innerHTML=betButtons(pk.ante,null)+`<button id="pkStartBtn" class="nbtn primary"${pk.ante<=0?' disabled':''}>شروع دست (آنته ${fa(pk.ante)} 🪙)</button>`;
+  if(pk.state==='bet'){$id('pokerAnteRow').innerHTML=betButtons('poker',pk.ante)+`<button id="pkStartBtn" class="nbtn primary"${pk.ante<=0?' disabled':''}>شروع دست (آنته ${fa(pk.ante)} 🪙)</button>`;
     $id('pokerAnteRow').querySelectorAll('[data-bet]').forEach(b=>b.onclick=()=>pkSetAnte(+b.dataset.bet));
     $id('pkStartBtn').onclick=pkStart;}
   const showBot=pk.state==='over'&&pk.showBot;
@@ -2227,7 +2323,7 @@ boot();
 <button id="gr-install-chip" type="button">نصب بازی روی گوشی</button>
 <script>
 (()=>{
-  const APP_VERSION='2.0.4-test';
+  const APP_VERSION='2.0.6-test';
   const VERSION_URL='./version.json';
   const shade=document.getElementById('gr-update-shade');
   const summary=document.getElementById('gr-update-summary');
@@ -2311,14 +2407,28 @@ boot();
 <div id="toast"></div>
 <div class="testBadge">نسخه تست — بدون لیدربورد آنلاین</div>
 <div id="casino" class="hidden"><div class="npanel">
- <div class="topbar"><button id="closeCasino" class="nback">‹ بازگشت</button><div class="ntitle">🎰 کازینو</div><span class="tokChip">🎲 <b>۰</b></span></div>
- <div class="casinoHead"><div class="casinoTitle">با توکن، بدون ربط به سکه و الماس</div></div>
+ <div class="topbar"><button id="closeCasino" class="nback">‹ بازگشت</button><div class="ntitle">🎰 کازینو</div><button id="casinoSettingsBtn" class="rulesBtn">⚙️</button></div>
+ <div class="chips"><span class="tokChip">🎲 <b>۰</b></span><span class="tokChip jpChip">🏆 <b>۰</b></span></div>
+ <div class="casinoHead"><div class="casinoTitle">با توکن، بدون ربط به سکه و الماس</div><div class="note">این یک نسخه‌ی تست است؛ اقتصاد کازینو فقط روی گوشی خودت ذخیره می‌شود و با سرور اعتبارسنجی نمی‌شود.</div></div>
  <div id="casinoTiles" class="cats casinoTiles">
   <button class="ctile" data-game="blackjack"><i>🃏</i><b>بلک‌جک</b><small>در برابر دیلر</small></button>
   <button class="ctile" data-game="poker"><i>♠️</i><b>پوکر</b><small>هدزآپ با حریف</small></button>
   <button class="ctile" data-game="bus"><i>🚌</i><b>Ride the Bus</b><small>۴ مرحله، شرط رو دوبرابر کن</small></button>
-  <button class="ctile" data-game="slots"><i>🎰</i><b>اسلات</b><small>سه حلقه، جدول برد</small></button>
+  <button class="ctile" data-game="slots"><i>🎰</i><b>اسلات</b><small>سه حلقه + جک‌پات</small></button>
+  <button class="ctile" data-game="exchange" style="grid-column:1/3"><i>💱</i><b>صرافی توکن</b><small>خرید و بازخرید توکن با الماس</small></button>
  </div>
+</div></div>
+
+<div id="casinoExchange" class="hidden"><div class="npanel">
+ <div class="topbar"><button id="closeExchange" class="nback">‹ بازگشت</button><div class="ntitle">💱 صرافی توکن</div><span class="tokChip">🎲 <b>۰</b></span></div>
+ <div id="exRateInfo" class="note" style="text-align:center"></div>
+ <div class="chips"><span class="tokChip drChip">🏦 ذخیره صرافی: <b>۰</b></span></div>
+ <div class="sgroup">خرید توکن با الماس</div>
+ <div id="exDiamondBal" class="note"></div>
+ <div id="exBuyBtns" class="betRow"></div>
+ <div class="sgroup">بازخرید توکن به الماس</div>
+ <div id="exTokenBal" class="note"></div>
+ <div id="exSellBtns" class="betRow"></div>
 </div></div>
 
 <div id="bjGame" class="hidden"><div class="npanel">
